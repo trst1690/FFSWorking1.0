@@ -1,0 +1,101 @@
+/* frontend/src/components/Admin/AdminPanel.css */
+.admin-panel {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.admin-message {
+  background: #4CAF50;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.admin-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.admin-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #2196F3;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.admin-actions button:hover {
+  background: #1976D2;
+}
+
+.admin-actions button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.cash-games-list {
+  display: grid;
+  gap: 20px;
+}
+
+.cash-game-card {
+  background: #2a2a3e;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #3a3a4e;
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.status.open { background: #4CAF50; }
+.status.closed { background: #FF9800; }
+.status.live { background: #2196F3; }
+.status.completed { background: #9C27B0; }
+
+.game-players {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #3a3a4e;
+}
+
+.player-entry {
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.entry-status {
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.entry-status.pending { background: #607D8B; }
+.entry-status.drafting { background: #FF9800; }
+.entry-status.completed { background: #4CAF50; }
+
+.warning {
+  margin-top: 10px;
+  padding: 10px;
+  background: rgba(255, 152, 0, 0.2);
+  border-radius: 5px;
+  text-align: center;
+}

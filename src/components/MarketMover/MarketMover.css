@@ -1,0 +1,389 @@
+/* Market Mover Modal Styles */
+.vote-modal,
+.ownership-modal {
+  max-width: 600px;
+  width: 90%;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #2a2f3e;
+}
+
+.modal-header h2 {
+  margin: 0;
+  color: #00d4ff;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #8892b0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-button:hover {
+  color: #ffffff;
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+.vote-info,
+.ownership-info {
+  background-color: #0a0e1b;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.ticket-cost {
+  color: #ffaa44;
+  font-weight: bold;
+}
+
+.vote-description,
+.ownership-description {
+  margin-top: 0.5rem;
+  color: #8892b0;
+  font-size: 0.9rem;
+}
+
+.current-leaders-preview {
+  background-color: #1a1f2e;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.current-leaders-preview h4 {
+  margin: 0 0 0.5rem 0;
+  color: #00d4ff;
+}
+
+.leaders-preview-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.leader-preview {
+  color: #8892b0;
+  font-size: 0.9rem;
+}
+
+.search-section {
+  margin-bottom: 1rem;
+}
+
+.player-search,
+.player-input {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #0a0e1b;
+  border: 1px solid #2a2f3e;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.player-search:focus,
+.player-input:focus {
+  outline: none;
+  border-color: #00d4ff;
+}
+
+.players-list {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #2a2f3e;
+  border-radius: 8px;
+  background-color: #0a0e1b;
+}
+
+.player-option {
+  padding: 1rem;
+  border-bottom: 1px solid #2a2f3e;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+.player-option:hover {
+  background-color: #1a1f2e;
+}
+
+.player-option.selected {
+  background-color: #2a2f3e;
+  border-left: 3px solid #00d4ff;
+}
+
+.player-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.player-name {
+  font-weight: 500;
+}
+
+.player-position {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: white;
+}
+
+.player-position.QB { background-color: #ff4444; }
+.player-position.RB { background-color: #44ff44; }
+.player-position.WR { background-color: #4444ff; }
+.player-position.TE { background-color: #ff44ff; }
+
+.player-price {
+  color: #ffaa44;
+  font-weight: bold;
+}
+
+.no-results {
+  text-align: center;
+  padding: 2rem;
+  color: #8892b0;
+}
+
+.more-results {
+  text-align: center;
+  padding: 0.5rem;
+  color: #8892b0;
+  font-size: 0.875rem;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-top: 1px solid #2a2f3e;
+}
+
+.cancel-btn,
+.vote-btn,
+.query-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.cancel-btn {
+  background-color: #2a2f3e;
+  color: #ffffff;
+}
+
+.cancel-btn:hover {
+  background-color: #3a3f4e;
+}
+
+.vote-btn,
+.query-btn {
+  background-color: #00d4ff;
+  color: #0a0e1b;
+}
+
+.vote-btn:hover:not(:disabled),
+.query-btn:hover:not(:disabled) {
+  background-color: #00a8cc;
+}
+
+.vote-btn:disabled,
+.query-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Ownership Modal Specific */
+.query-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  color: #00d4ff;
+  font-weight: 500;
+}
+
+.contest-select {
+  padding: 0.75rem;
+  background-color: #0a0e1b;
+  border: 1px solid #2a2f3e;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.input-hint {
+  color: #8892b0;
+  font-size: 0.875rem;
+}
+
+.ownership-result {
+  text-align: center;
+  padding: 2rem;
+}
+
+.result-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.ownership-result h3 {
+  margin: 0 0 1rem 0;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.ownership-percentage {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #00d4ff;
+  margin-bottom: 0.5rem;
+}
+
+.result-context {
+  color: #8892b0;
+  margin-bottom: 2rem;
+}
+
+.check-another-btn {
+  padding: 0.75rem 2rem;
+  background-color: #2a2f3e;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.check-another-btn:hover {
+  background-color: #3a3f4e;
+}
+
+/* History Modal */
+.history-modal {
+  max-width: 500px;
+}
+
+.history-list {
+  max-height: 400px;
+  overflow-y: auto;
+  margin: 1rem 0;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #0a0e1b;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.history-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.history-reason {
+  font-weight: 500;
+}
+
+.history-date {
+  font-size: 0.875rem;
+  color: #8892b0;
+}
+
+.history-amount {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.history-amount.positive {
+  color: #44ff44;
+}
+
+.history-amount.negative {
+  color: #ff4444;
+}
+
+.no-history {
+  text-align: center;
+  padding: 2rem;
+  color: #8892b0;
+}
+/* Autocomplete styles */
+.autocomplete-wrapper {
+  position: relative;
+}
+
+.suggestions-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #1a1f2e;
+  border: 1px solid #2a2f3e;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.suggestion-item {
+  padding: 0.75rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #2a2f3e;
+  transition: background-color 0.2s;
+}
+
+.suggestion-item:hover {
+  background-color: #2a2f3e;
+}
+
+.suggestion-item:last-child {
+  border-bottom: none;
+}
+
+.suggestion-name {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.suggestion-details {
+  font-size: 0.875rem;
+  color: #8892b0;
+}
